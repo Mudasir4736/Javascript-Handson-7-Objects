@@ -43,14 +43,13 @@ e
 
 
     <pre>
-        function Check(obj1){
-   if(Object.keys(obj1).length===0){
-             return "false";
-           }
-           else {
-             return "true";
-           }
-}
+     
+function Check(obj1){
+    obj1.setter= function(){
+      console.log(this.name);
+    }
+ }
+ 
 
     </pre>
 
